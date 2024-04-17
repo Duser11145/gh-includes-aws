@@ -50,10 +50,6 @@ resource "local_file" "aws_key" {
   filename = "ase_customer.pem"
 }
 
-
-
-
-
 #output the EC2 details
 output "EC2publicDNS" {
   value = aws_instance.wb.public_dns
